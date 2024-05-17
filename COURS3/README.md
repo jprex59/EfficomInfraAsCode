@@ -1,0 +1,1 @@
+ansible-playbook -i inventories/inventory.ini semaphore_playbook.yml --ask-become-pass
