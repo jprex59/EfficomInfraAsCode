@@ -12,6 +12,7 @@ resource "google_compute_firewall" "allow_http" {
   source_ranges = ["0.0.0.0/0"]
 }
 
+
 # Règle de firewall pour autoriser le trafic entrant sur le port 22 (SSH)
 resource "google_compute_firewall" "allow_ssh" {
   name    = "allow-ssh"

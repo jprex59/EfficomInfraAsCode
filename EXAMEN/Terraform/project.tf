@@ -4,7 +4,7 @@ provider "google" {
 }
 
 resource "google_project" "terra-effi-proj" {
-  name            = "EFFICOM-IAC"
+  name            = "<NAME>"
   project_id      = var.project_id
-  billing_account = "01B8B9-870CC9-818D26"
+  billing_account = "<Billing account>"
 }

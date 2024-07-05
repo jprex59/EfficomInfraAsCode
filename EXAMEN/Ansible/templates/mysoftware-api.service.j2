@@ -1,0 +1,13 @@
+[Unit]
+Description=MySoftware API
+After=network.target
+
+[Service]
+User=apiuser
+WorkingDirectory=/opt/mysoftware
+Environment="PATH=/opt/mysoftware/venv/bin"
+ExecStart=/opt/mysoftware/venv/bin/uvicorn main:app --reload
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
